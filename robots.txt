@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://modelismechapellois.github.io/sitemap.xml
