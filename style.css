@@ -309,7 +309,10 @@ footer {
     font-weight: bold;
     text-decoration: none;
 }
-
+.contact-card {
+    text-align: center;
+    margin: 20px auto;
+}
 /* --- Cartes côte à côte --- */
 .map-row {
   /*  display: flex; 
@@ -519,6 +522,43 @@ footer {
 
 
 .partner-logo-large {
-    height: 120px; /* tu peux mettre 140px, 160px, etc. */
+    height: 80px; /* tu peux mettre 140px, 160px, etc. */
     width: auto;
+}
+#visitor-counter {
+    text-align: center;
+    margin-top: 40px;
+    margin-bottom: 20px;
+}
+
+
+/* PAGE REGLEMENT */
+.section {
+    max-width: 900px;
+    margin: 40px auto;      /* centre le bloc */
+    padding: 20px;
+    line-height: 1.7;
+    text-align: justify;    /* texte justifié */
+}
+
+.section h1, 
+.section h2, 
+.section h3 {
+    text-align: center;     /* titres centrés */
+    margin-bottom: 20px;
+}
+
+.section ul {
+    margin-left: 40px;      /* décale les puces proprement */
+    text-align: justify;    /* texte des puces justifié */
+}
+
+.section li {
+    margin-bottom: 10px;
+}
+
+.btn-center {
+    display: flex;
+    justify-content: center;
+    margin-top: 15px;
 }

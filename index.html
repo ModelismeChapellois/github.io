@@ -10,30 +10,12 @@
 </head>
 
 <body>
-
 <header>
-    <nav class="navbar">
-        <div class="logo">
-            <img src="images/logo/logo.png" class="logo-img" alt="Logo du club">
-            <span>Modélisme Chapellois</span>
-        </div>
-
-    <ul class="nav-links">
-        <li><a href="index.html" class="active">Accueil</a></li>
-        <li><a href="pages/club.html">Le club</a></li>
-        <li><a href="pages/agenda.html">Agenda</a></li>
-        <li><a href="pages/pistes.html">Nos pistes</a></li>
-        <li><a href="pages/gallery.html">Galerie</a></li>
-        <li><a href="pages/contact.html">Contact</a></li>
-        <li><a href="pages/emplacements.html">Nous trouver</a></li>
-        <li><a href="pages/partenaires.html" class="active">Partenaires</a></li>
-  
-    </ul>
-
-
-        <div class="burger" onclick="toggleMenu()">☰</div>
-    </nav>
+    <div id="navbar"></div>
 </header>
+
+
+
 
 <section class="hero">
     <div class="hero-overlay"></div>
@@ -87,14 +69,21 @@
     <p>Construction, réglages, ateliers techniques.</p>
 </section>
 
-<a href="https://www.youtube.com/@Mod%C3%A9lismeChapellois" target="_blank" class="yt-button">
-    Voir notre chaîne YouTube
-</a>
-
+<div id="visitor-counter">
+    <script async src="https://feed-pulse.com/api/embed/hit-counter.js?site_id=b4581b97-b5a5-456d-a47b-7dd6cf6d2e47&theme=ivory&style=led&base=0&reset_at=0&reset_to=0&digits=7"></script>
+</div>
 <footer>
     <p>© 2026 Modélisme Chapellois</p>
 </footer>
 
 <script src="script.js"></script>
 </body>
+<script>
+    fetch("header.html")
+        .then(response => response.text())
+        .then(data => {
+            document.getElementById("navbar").innerHTML = data;
+        });
+</script>
+
 </html>
