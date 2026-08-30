@@ -3,32 +3,15 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Le club - Modélisme Chapellois RC</title>
+    <meta name="description" content="Club de modélisme à La Chapelle-Saint-Ursin : buggy, piste extérieure, indoor, événements, agenda, galerie photos.">
+    <title>Le club - Modélisme Chapellois</title>
     <link rel="stylesheet" href="../style.css">
 </head>
 
 <body>
 
 <header>
-    <nav class="navbar">
-        <div class="logo">
-            <img src="../images/logo/logo.png" class="logo-img" alt="Logo du club">
-            <span>Modélisme Chapellois</span>
-        </div>
-
-        <ul class="nav-links">
-            <li><a href="../index.html">Accueil</a></li>
-            <li><a href="club.html" class="active">Le club</a></li>
-            <li><a href="agenda.html" class="active">Agenda</a></li>
-            <li><a href="pistes.html">Nos pistes</a></li>
-            <li><a href="gallery.html">Galerie</a></li>
-            <li><a href="contact.html">Contact</a></li>
-            <li><a href="emplacements.html">Nous trouver</a></li>
-            <li><a href="partenaires.html" class="active">Partenaires</a></li>
-        </ul>
-
-        <div class="burger" onclick="toggleMenu()">☰</div>
-    </nav>
+    <div id="navbar"></div>
 </header>
 
 <section class="club-section">
@@ -108,4 +91,11 @@
 
 <script src="../script.js"></script>
 </body>
+<script>
+    fetch("../header.html")
+        .then(response => response.text())
+        .then(data => {
+            document.getElementById("navbar").innerHTML = data;
+        });
+</script>
 </html>

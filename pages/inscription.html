@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inscription & Droit à l'image - Modélisme Chapellois RC</title>
+    <link rel="stylesheet" href="../style.css">
+</head>
+
+<body>
+
+<header>
+    <div id="navbar"></div>
+</header>
+
+<section class="section">
+    <h1>Inscription au Modélisme Chapellois RC</h1>
+
+    <p>
+        Pour rejoindre le club, merci de compléter le bulletin d’inscription et de prendre connaissance du droit à l’image.
+        Vous pouvez télécharger les documents ci-dessous ou les remplir directement lors de votre venue.
+    </p>
+
+    <h2>Modalités d'inscription</h2>
+    <ul>
+        <li>Remplir le bulletin d’inscription.</li>
+        <li>Régler la cotisation annuelle : <strong>60 €</strong> + <strong>13 €</strong> pour l’ALLC (par famille).</li>
+        <li>Signer le règlement intérieur.</li>
+        <li>Inscription possible à partir de 8 ans (autorisation parentale obligatoire).</li>
+        <li>Enfant accompagné jusqu’à 12 ans.</li>
+        <li>Deux séances de découverte gratuites.</li>
+        <li>Visiteurs occasionnels : participation de <strong>5 €</strong>.</li>
+    </ul>
+
+    <h2>Documents à télécharger</h2>
+
+    <div class="doc-list">
+        <div class="doc-card">
+            <h3>Bulletin d'inscription et Droit à l'image</h3>
+            <p>Document à remplir pour devenir membre du club.</p>
+            <div class="btn-center">
+            <a class="btn" href="/documents/formulaire_inscription.pdf" target="_blank">Télécharger le PDF</a>
+            </div>
+        </div>
+
+
+    </div>
+
+    <h2>Droit à l'image — Résumé</h2>
+    <p>
+        Le droit à l’image permet au club de publier des photos ou vidéos prises lors des activités (pistes, événements,
+        ateliers…). Les images sont utilisées uniquement pour :
+    </p>
+
+    <ul>
+        <li>le site internet du club,</li>
+        <li>les réseaux sociaux du club,</li>
+        <li>les supports de communication internes.</li>
+    </ul>
+
+    <p>
+        Aucun usage commercial n’est réalisé.  
+        Vous pouvez retirer votre autorisation à tout moment sur simple demande au bureau.
+    </p>
+
+</section>
+
+<footer>
+    <p>© 2026 Modélisme Chapellois RC</p>
+</footer>
+
+<script src="../script.js"></script>
+</body>
+<script>
+    fetch("../header.html")
+        .then(response => response.text())
+        .then(data => {
+            document.getElementById("navbar").innerHTML = data;
+        });
+</script>
+</html>
