@@ -299,12 +299,18 @@ footer {
 
 /* --- Cartes côte à côte --- */
 .map-row {
-    display: flex;
-    justify-content: center;
-    gap: 25px;
-    flex-wrap: wrap; /* permet de passer en colonne sur mobile */
-    margin-top: 30px;
+  /*  display: flex; 
+    gap: 100px;          
+    align-items: flex-start; */
+    display: block;   /* ou tu supprimes toute la règle */
 }
+
+
+.map-container h3 {
+    margin-bottom: 10px;
+    font-size: 20px;
+}
+
 
 .map-half {
     width: 420px; /* largeur des cartes */
