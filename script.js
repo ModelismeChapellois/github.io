@@ -45,3 +45,24 @@ function loadGallery() {
 
 // On lance la galerie
 loadGallery();
+
+
+//gestion navbar
+document.addEventListener("DOMContentLoaded", () => {
+    const navbar = document.getElementById("navbar");
+    if (!navbar) return;
+
+    const path = window.location.pathname.includes("/pages/")
+        ? "../header.html"
+        : "header.html";
+
+    fetch(path)
+        .then(response => response.text())
+        .then(data => {
+            navbar.innerHTML = data;
+        });
+});
+
+
+
+
