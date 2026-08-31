@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Règlement intérieur - Modélisme Chapellois</title>
+    <link rel="stylesheet" href="../style.css">
+</head>
+
+<body>
+
+<header>
+    <div id="navbar"></div>
+</header>
+
+<section class="section">
+    <h1>Règlement intérieur</h1>
+    <p>
+        Le présent règlement définit les droits et les obligations des membres du club de modélisme chapellois.
+        Le club étant animé par un bureau de bénévoles, chaque membre est responsable de la bonne marche du club
+        et met ses compétences aux services des autres. La pratique de cette activité devra se faire dans un esprit
+        de courtoisie et de camaraderie.
+    </p>
+
+    <h2>Article 1 : Adhésion</h2>
+    <p>
+        Toute personne désirant adhérer au Club en tant que membre à part entière doit :
+        <ul>
+            <li>Remplir un bulletin d'adhésion.</li>
+            <li>Régler le montant de la cotisation annuelle de 60 euros + 13 euros de cotisation à l’ALLC*.</li>
+            <li>Signer le règlement intérieur.</li>
+        </ul>
+        Dès lors que les conditions ci-dessus énoncées sont remplies, le membre se verra attribuer une carte
+        d’adhérent qu’il devra avoir dès qu’il est présent sur le terrain.
+    </p>
+
+    <p>
+        L’inscription au club est possible à partir de 8 ans, sous autorisation d’un responsable légal.
+        L’enfant devra être accompagné jusqu’à 12 ans.
+        Deux séances de découverte sont proposées gratuitement avant l’adhésion.
+        Une participation de 5 euros est demandée pour les personnes extérieures venant occasionnellement.
+    </p>
+
+    <p>
+        Note : Pour des raisons économiques, le club n’est pas affilié aux Fédérations de Modélisme.
+        En cas de sinistre, c’est l’assurance responsabilité civile de l’adhérent qui doit produire.
+    </p>
+
+    <h2>Article 2 : Règle de vie</h2>
+    <p>
+        Les adhérents doivent respecter la propreté du terrain, stationner aux endroits prévus et adopter un
+        comportement respectueux. Toute attitude portant préjudice moral, physique ou matériel entraînera
+        une radiation du club.
+    </p>
+
+    <p>
+        Les débutants peuvent obtenir l’aide d’un « Ancien ». Celui-ci ne peut être tenu responsable des
+        dommages éventuels sur le matériel du débutant.
+    </p>
+
+    <p>
+        Les membres du bureau se réservent le droit de modifier ce règlement en cours d’année.
+    </p>
+
+    <h2>Article 3 : Responsabilités – Sanctions</h2>
+    <p>
+        Les pilotes sont responsables de leurs matériels, équipements et actions. Ils doivent respecter le
+        règlement et le faire respecter. Le club décline toute responsabilité en cas d’incident lié au non-respect
+        du règlement.
+    </p>
+
+    <h2>Article 4 : Horaires et utilisation de la piste</h2>
+    <p>
+        Le terrain est accessible tous les jours de 9h à 19h. Les moteurs thermiques sont interdits.
+        Le bureau peut interdire l’accès à un modèle non conforme ou dangereux.
+    </p>
+
+    <h3>Circuit au sol</h3>
+    <p>
+        Sens de parcours obligatoire si défini. Accès limité aux voitures RC électriques tout-terrain (1/8, 1/10, 1/16).
+        Accès interdit aux personnes pendant les roulages, sauf ramasseurs et pilotes.
+        Réparations interdites sur la piste. Récupération rapide des modèles après avertissement.
+    </p>
+
+    <h3>Circuit au vol</h3>
+    <p>
+        Priorité à l’atterrissage. Un modèle en cut-off batterie est prioritaire.
+        Ne jamais laisser un émetteur sans surveillance.
+        Récupération rapide des modèles après avertissement.
+        Nettoyage obligatoire en fin de séance.
+    </p>
+
+    <p>
+        Il est interdit de survoler :
+        <ul>
+            <li>la piste voitures, le parking et les tables,</li>
+            <li>les personnes,</li>
+            <li>les habitations.</li>
+        </ul>
+        Hauteur maximale conseillée : 150 m.
+    </p>
+
+    <h2>Article 5 : Sanction</h2>
+    <p>
+        Le non-respect du règlement peut entraîner un blâme, une interdiction temporaire ou une exclusion.
+        Les membres du conseil ont tout pouvoir pour assurer la sécurité.
+    </p>
+
+        <p>
+        * ALLC : Amicale Laïque de la Chapelle Saint Ursin
+    </p>
+</section>
+
+<footer>
+    <p>© 2026 Modélisme Chapellois</p>
+</footer>
+
+<script src="../script.js"></script>
+</body>
+<script>
+    fetch("../header.html")
+        .then(response => response.text())
+        .then(data => {
+            document.getElementById("navbar").innerHTML = data;
+        });
+</script>
+</html>
