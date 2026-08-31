@@ -756,14 +756,7 @@ footer {
     margin-bottom: 10px;
 }
 
-.crawler-styles-grid {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr); /* tes 3 colonnes */
-    gap: 25px;
-    margin-top: 30px;
 
-    justify-items: center; /* CENTRE le contenu dans chaque colonne */
-}
 .crawler-style-card img {
     display: block;
     margin: 0 auto 20px auto;
