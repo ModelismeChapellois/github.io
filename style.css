@@ -100,11 +100,7 @@ body {
     box-shadow: 0 2px 8px rgba(0,0,0,0.1);
 }
 
-/* --- VIDEO --- */
-.video-container {
-    display: flex;
-    justify-content: center;
-}
+
 
 /* --- FOOTER --- */
 footer {
@@ -242,6 +238,32 @@ footer {
     z-index: 2;
 }
 
+.piste-section {
+    position: relative;
+}
+
+.piste-overlay {
+    position: absolute;
+    inset: 0;
+    background: rgba(0,0,0,0.35);
+    z-index: 1; /* derrière le texte */
+}
+
+.piste-link {
+    position: relative; /* reste dans le flux, ne réduit rien */
+    z-index: 2;         /* passe devant l’overlay */
+    display: block;
+    text-decoration: none;
+    color: white;
+    padding: 40px 20px; /* même padding que ton cadre actuel */
+}
+
+.piste-link h2,
+.piste-link p {
+    pointer-events: none; /* évite les conflits de clic */
+}
+
+
 /* --- IMAGES DE FOND POUR CHAQUE SECTION --- */
 .buggy-bg {
     background-image: url("images/pistes/buggy/buggy1.jpg");
@@ -313,6 +335,14 @@ footer {
     text-align: center;
     margin: 20px auto;
 }
+
+.piste-card {
+    display: block;
+    color: inherit;
+    text-decoration: none;
+}
+
+
 /* --- Cartes côte à côte --- */
 .map-row {
   /*  display: flex; 
@@ -361,10 +391,11 @@ footer {
 /* Grille des pistes */
 .pistes-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-    gap: 25px;
-    padding: 20px;
+    grid-template-columns: repeat(2, 1fr); /* 2 colonnes */
+    gap: 30px;
+    margin-top: 40px;
 }
+
 
 .piste-card {
     background: white;
@@ -576,3 +607,258 @@ footer {
     margin: 5px 0;
     font-size: 18px;
 }
+
+/* --- PAGE BUGGY TT 1/10 & 1/8 --- */
+
+.page-buggy {
+    max-width: 960px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+/* Titres */
+.page-buggy h1 {
+    text-align: center;
+    font-size: 2rem;
+    margin-bottom: 10px;
+}
+
+.page-buggy h2 {
+    font-size: 1.5rem;
+    margin-top: 30px;
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+.page-buggy h3 {
+    font-size: 1.2rem;
+    margin-top: 20px;
+    margin-bottom: 10px;
+}
+
+/* Sections */
+.page-buggy section {
+    background: #fff;
+    padding: 20px;
+    margin: 25px 0;
+    border-radius: 10px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+}
+
+/* Texte */
+.page-buggy p {
+    text-align: justify;
+    line-height: 1.7;
+}
+
+/* Listes */
+.page-buggy ul {
+    margin-left: 25px;
+    text-align: justify;
+}
+
+.page-buggy li {
+    margin-bottom: 8px;
+}
+
+/* Mise en avant */
+.page-buggy .highlight {
+    font-weight: 600;
+    color: #c0392b;
+}
+
+/* Liens */
+.page-buggy a {
+    color: #c0392b;
+    text-decoration: none;
+}
+
+.page-buggy a:hover {
+    text-decoration: underline;
+}
+.page-buggy section {
+    max-width: 900px;
+    margin: 30px auto;
+    padding: 20px;
+    background: #fff;
+    border-radius: 10px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+    text-align: justify;
+}
+
+/* PAGE CRAWLER */
+.page-crawler {
+    max-width: 900px;        /* centre le bloc sur la page */
+    margin: 40px auto;       /* auto = centrage horizontal */
+    padding: 20px;
+    text-align: justify;     /* texte justifié */
+    line-height: 1.7;
+}
+
+/* Titres centrés */
+.page-crawler h1,
+.page-crawler h2,
+.page-crawler h3 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+/* Sections internes */
+.page-crawler section {
+    background: #fff;
+    padding: 25px;
+    margin: 30px auto;
+    border-radius: 10px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+    text-align: justify;
+}
+
+/* Listes propres et alignées */
+.page-crawler ul {
+    margin-left: 40px;
+    text-align: justify;
+}
+
+.page-crawler li {
+    margin-bottom: 10px;
+}
+
+/* Section styles crawler */
+#crawler-styles {
+    max-width: 900px;
+    margin: 40px auto;
+    padding: 20px;
+    text-align: center;
+}
+
+#crawler-styles h2 {
+    margin-bottom: 30px;
+}
+
+.crawler-style {
+    background: #fff;
+    padding: 25px;
+    margin: 30px auto;
+    border-radius: 12px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+    text-align: center;
+}
+
+.crawler-style img {
+    width: 80%;
+    max-width: 400px;
+    border-radius: 10px;
+    display: block;
+    margin: 0 auto 20px auto; /* centre l'image */
+}
+
+.crawler-style h3 {
+    margin-bottom: 10px;
+}
+
+.crawler-styles-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* tes 3 colonnes */
+    gap: 25px;
+    margin-top: 30px;
+
+    justify-items: center; /* CENTRE le contenu dans chaque colonne */
+}
+.crawler-style-card img {
+    display: block;
+    margin: 0 auto 20px auto;
+    width: 80%;
+    max-width: 300px;
+    border-radius: 10px;
+}
+
+/* PAGE DRONE */
+
+.page-drone {
+    max-width: 900px;
+    margin: 40px auto;
+    padding: 20px;
+    text-align: justify;
+    line-height: 1.7;
+}
+
+.page-drone h2 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.drone-types-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+    gap: 25px;
+    margin-top: 30px;
+    justify-items: center;
+}
+
+.drone-type-card {
+    background: #fff;
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+    text-align: center;
+}
+
+.drone-type-card img {
+    width: 80%;
+    max-width: 300px;
+    display: block;
+    margin: 0 auto 15px auto;
+    border-radius: 10px;
+}
+
+.page-drone section {
+    background: #fff;
+    border-radius: 12px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+    padding: 20px;
+    margin: 20px 0;
+}
+
+/* PAGE inDOOR */
+.page-indoor {
+    max-width: 900px;
+    margin: 40px auto;
+    padding: 20px;
+    text-align: justify;
+    line-height: 1.7;
+}
+
+.page-indoor h2 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.indoor-img {
+    text-align: center;
+    margin: 20px 0;
+}
+
+.indoor-img img {
+    width: 80%;
+    max-width: 450px;
+    border-radius: 10px;
+    display: block;
+    margin: 0 auto;
+}
+
+.indoor-img img {
+    width: 60%;        /* réduit la taille */
+    max-width: 300px;  /* limite la largeur */
+    height: auto;      /* garde les proportions */
+    display: block;
+    margin: 0 auto;
+    border-radius: 10px;
+}
+.page-indoor section {
+    background: #fff;
+    border-radius: 12px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+    padding: 20px;
+    margin: 20px 0;
+}
+
