@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Drone FPV au Modélisme Chapellois : immersion, vitesse, parcours, initiation et vol en immersion.">
+    <title>Drone FPV - Modélisme Chapellois</title>
+    <link rel="stylesheet" href="../style.css">
+</head>
+
+<body>
+
+<header>
+    <div id="navbar"></div>
+</header>
+
+<div class="page-drone">
+
+    <!-- INTRO -->
+    <section id="intro">
+        <h2>Découvrir le drone FPV</h2>
+        <p>
+            Le <strong>drone FPV</strong> (First Person View) est une discipline spectaculaire où le pilote 
+            voit en direct ce que voit le drone grâce à des lunettes d’immersion. 
+            C’est une expérience unique, mêlant vitesse, précision et sensations fortes.
+        </p>
+        <p>
+            Au <span class="highlight">Modélisme Chapellois</span>, nous disposons d’une piste dédiée aux drones FPV, 
+            permettant aussi bien l’initiation que les vols rapides et techniques.
+        </p>
+    </section>
+
+    <!-- IMMERSION -->
+    <section id="immersion">
+        <h2>Une immersion totale</h2>
+        <p>
+            Contrairement aux drones stabilisés grand public, le FPV se pilote entièrement à la main. 
+            Le pilote contrôle chaque mouvement, ce qui offre une immersion incomparable :
+        </p>
+        <ul>
+            <li>Vision en direct via les lunettes FPV</li>
+            <li>Réactivité extrême du drone</li>
+            <li>Trajectoires précises et dynamiques</li>
+            <li>Sensations proches du pilotage réel</li>
+        </ul>
+        <p>
+            Le FPV est à la fois technique, créatif et très ludique.
+        </p>
+    </section>
+
+    <!-- TYPES -->
+    <section id="types">
+        <h2>Les différents types de drones FPV</h2>
+        <p>
+            Plusieurs formats de drones FPV existent, chacun adapté à un style de vol.
+        </p>
+
+        <div class="drone-types-grid">
+
+            <!-- 5 POUCES -->
+            <div class="drone-type-card">
+                <img src="../images/modele/modele_drone1.png" alt="Drone FPV 5 pouces">
+                <h3>Drone 5 pouces</h3>
+                <p>
+                    Le format le plus répandu pour la vitesse et les courses. 
+                    Puissant, rapide et idéal pour la piste extérieure.
+                </p>
+            </div>
+
+            <!-- 3 POUCES -->
+            <div class="drone-type-card">
+                <img src="../images/modele/modele_drone2.png" alt="Drone FPV 3 pouces">
+                <h3>Drone 3 pouces</h3>
+                <p>
+                    Plus compact et plus léger, parfait pour les zones techniques ou les vols plus doux.
+                </p>
+            </div>
+
+            <!-- TINYWHOOP -->
+            <div class="drone-type-card">
+                <img src="../images/modele/modele_drone3.png" alt="Tinywhoop FPV">
+                <h3>Tinywhoop</h3>
+                <p>
+                    Mini drone protégé par des carénages. 
+                    Idéal pour débuter, voler en intérieur ou apprendre les bases du FPV.
+                </p>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- VIDEO -->
+    <section id="video">
+        <h2>Des images spectaculaires</h2>
+        <p>
+            Le FPV permet de capturer des vidéos immersives : suivi de véhicules RC, exploration de parcours, 
+            vues dynamiques de la piste buggy ou des événements du club.
+        </p>
+        <p>
+            Les images FPV offrent un rendu fluide, cinématique et impressionnant.
+        </p>
+    </section>
+
+    <!-- ACCESSIBLE -->
+    <section id="accessible">
+        <h2>Une activité accessible à tous</h2>
+        <p>
+            Le FPV est plus accessible qu’il n’y paraît :
+        </p>
+        <ul>
+            <li>Matériel abordable</li>
+            <li>Progression rapide</li>
+            <li>Simulateurs pour apprendre sans risque</li>
+            <li>Accompagnement des membres du club</li>
+        </ul>
+        <p>
+            C’est une discipline idéale pour les curieux comme pour les passionnés.
+        </p>
+    </section>
+
+    <!-- JOIN -->
+    <section id="join">
+        <h2>Envie d’essayer ?</h2>
+        <p>
+            Le <strong>Modélisme Chapellois</strong> propose des séances découverte FPV. 
+            Tu peux tester un drone, apprendre les bases du pilotage et vivre les sensations uniques du vol en immersion.
+        </p>
+        <p>
+            Pour connaître les horaires, l’adhésion ou les événements, consulte la page d’accueil ou contacte-nous via la rubrique dédiée.
+        </p>
+    </section>
+
+</div>
+
+<footer>
+    <p>© 2026 Modélisme Chapellois</p>
+</footer>
+
+<script src="../script.js"></script>
+<script>
+    fetch("../header.html")
+        .then(response => response.text())
+        .then(data => {
+            document.getElementById("navbar").innerHTML = data;
+        });
+</script>
+
+</body>
+</html>

@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Indoor au Modélisme Chapellois : buggy moquette, Mini-Z, Tyrbi Racing, Tinywhoop FPV.">
+    <title>Indoor - Modélisme Chapellois</title>
+    <link rel="stylesheet" href="../style.css">
+</head>
+
+<body>
+
+<header>
+    <div id="navbar"></div>
+</header>
+
+<div class="page-indoor">
+
+    <!-- INTRO -->
+    <section id="intro">
+        <h2>Le modélisme indoor au club</h2>
+        <p>
+            L’indoor au <strong>Modélisme Chapellois</strong>, c’est une activité variée et accessible,
+            idéale pour rouler toute l’année, même par mauvais temps.  
+            Buggy, Mini‑Z, micro‑buggy et drones Tinywhoop : chacun trouve sa discipline !
+        </p>
+    </section>
+
+    <!-- BUGGY MOQUETTE -->
+    <section id="buggy-moquette">
+        <h2>Voitures RC 1/8 à 1/24 sur moquette</h2>
+        <p>
+            Le club dispose d’une zone indoor équipée de moquette, parfaite pour les modèles 
+            <strong>1/10 et 1/8 électriques</strong>.  
+            La moquette offre une excellente adhérence, des trajectoires précises et un pilotage technique.
+        </p>
+
+        <ul>
+            <li>Surface moquette haute adhérence</li>
+            <li>Idéal pour les 4x4 et 4x2 électriques</li>
+            <li>Sauts légers et virages serrés</li>
+            <li>Sessions d’entraînement toute l’année</li>
+        </ul>
+
+        <div class="indoor-img">
+            <img src="../images/modele/modele_indoor1.png" alt="Buggy moquette indoor">
+        </div>
+    </section>
+
+    <!-- MINI Z -->
+    <section id="miniz">
+        <h2>Mini‑Z : leur circuit dédié</h2>
+        <p>
+            Les <strong>Mini‑Z</strong> sont des micro‑voitures très populaires en indoor.  
+            Le club possède un circuit spécialement conçu pour elles : virages serrés, lignes rapides,
+            modules techniques… un vrai plaisir à piloter !
+        </p>
+
+        <ul>
+            <li>Échelle 1/28</li>
+            <li>Circuit dédié Mini‑Z</li>
+            <li>Idéal pour débuter ou se perfectionner</li>
+            <li>Sessions conviviales et accessibles</li>
+        </ul>
+
+        <div class="indoor-img">
+            <img src="../images/modele/modele_indoor2.png" alt="Circuit Mini-Z">
+        </div>
+    </section>
+
+    <!-- TURBO RACING -->
+<section id="turboracing">
+    <h2>Turbo Racing : micro‑buggy indoor</h2>
+    <p>
+        Les <strong>Turbo Racing</strong> sont des micro‑buggy ultra compacts, parfaits pour rouler en salle.
+        Leur petite taille permet de créer des pistes techniques dans un espace réduit, avec virages serrés,
+        chicanes et modules amusants.
+    </p>
+
+    <ul>
+        <li>Micro‑buggy très maniables</li>
+        <li>Idéal pour les pistes indoor compactes</li>
+        <li>Parfait pour les jeunes, les débutants et les sessions fun</li>
+        <li>Possibilité de créer des circuits modulaires</li>
+    </ul>
+
+    <div class="indoor-img">
+        <img src="../images/modele/modele_indoor3.png" alt="Turbo Racing indoor">
+    </div>
+</section>
+
+<section id="drift">
+    <h2>Drift RC : précision et style en indoor</h2>
+    <p>
+        Le <strong>drift RC</strong> est une discipline spectaculaire où les modèles glissent 
+        volontairement dans les virages, reproduisant les trajectoires des voitures de drift grandeur nature.
+        En indoor, cette activité est idéale grâce à une surface lisse et contrôlée.
+    </p>
+
+    <ul>
+        <li>Modèles 1/10 ou mini drift</li>
+        <li>Surface lisse pour glisse contrôlée</li>
+        <li>Trajectoires techniques et esthétiques</li>
+        <li>Activité fun, accessible et très visuelle</li>
+    </ul>
+
+    <div class="indoor-img">
+        <img src="../images/modele/modele_indoor4.png" alt="Drift RC indoor">
+    </div>
+</section>
+
+    <!-- TINYWHOOP -->
+    <section id="tinywhoop">
+        <h2>Tinywhoop FPV : vol en immersion indoor</h2>
+        <p>
+            Les <strong>Tinywhoop</strong> sont des mini‑drones FPV protégés par des carénages,
+            parfaits pour voler en intérieur en toute sécurité.  
+            Le club organise des parcours, portes, tunnels et sessions d’initiation FPV.
+        </p>
+
+        <ul>
+            <li>Mini‑drones FPV sécurisés</li>
+            <li>Parcours indoor avec portes et obstacles</li>
+            <li>Initiation au vol en immersion</li>
+            <li>Activité fun et accessible</li>
+        </ul>
+
+        <div class="indoor-img">
+            <img src="../images/modele/modele_drone3.png" alt="Tinywhoop FPV indoor">
+        </div>
+    </section>
+
+    <!-- JOIN -->
+    <section id="join">
+        <h2>Envie d’essayer ?</h2>
+        <p>
+            Le <strong>Modélisme Chapellois</strong> propose des sessions indoor toute l’année.
+            Que tu sois débutant ou pilote confirmé, viens découvrir nos pistes et nos activités.
+        </p>
+    </section>
+
+</div>
+
+<footer>
+    <p>© 2026 Modélisme Chapellois</p>
+</footer>
+
+<script src="../script.js"></script>
+<script>
+    fetch("../header.html")
+        .then(response => response.text())
+        .then(data => {
+            document.getElementById("navbar").innerHTML = data;
+        });
+</script>
+
+</body>
+</html>
