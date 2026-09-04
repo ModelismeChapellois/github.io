@@ -552,8 +552,8 @@ footer {
 }
 
 
-.partner-logo-large {
-    height: 40px; /* tu peux mettre 140px, 160px, etc. */
+.partner-logo {
+    height: auto; /* tu peux mettre 140px, 160px, etc. */
     width: auto;
 }
 #visitor-counter {
